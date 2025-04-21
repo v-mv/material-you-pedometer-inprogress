@@ -18,11 +18,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
 		<item name="secusoLogoDrawable">@drawable/secuso_logo_black</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
 
         <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
         <item name="textAppearanceLargePopupMenu">@style/popupMenuTextAppearanceSmall</item>
@@ -32,9 +34,8 @@
         <item name="android:alertDialogTheme">@style/AppTheme.AlertDialog</item>
     </style>
 
-    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+    <style name="AppTheme.Dialog" parent="Theme.Material3.DayNight.Dialog">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -43,7 +44,7 @@
         <item name="android:textColorSecondary">@color/black</item>
     </style>
 
-    <style name="AppTheme.AlertDialog" parent="AppTheme.Dialog">
+    <style name="AppTheme.AlertDialog" parent="Theme.Material3.DayNight.Dialog.Alert">
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:textColorSecondary">@color/black</item>
     </style>
@@ -84,7 +85,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">0dp</item>
-        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:clickable">true</item>
     </style>
 
@@ -100,7 +101,7 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="PopupMenuStyle" parent="Theme.AppCompat.Light">
+    <style name="PopupMenuStyle" parent="Widget.Material3.PopupMenu">
         <item name="android:textColor">@color/black</item>
     </style>
 
